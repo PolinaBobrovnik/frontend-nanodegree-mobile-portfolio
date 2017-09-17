@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=" FILL ME IN ">
-    <meta name="author" content=" FILL ME IN ">
+    <meta name="description" content="Optimization">
+    <meta name="author" content="Polina">
     <title>Cameron Pittman: Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
 
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
-
 
     <script async src="js/perfmatters.js"></script>
   </head>
@@ -50,7 +48,7 @@
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" src="views/images/pizzeria100.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
@@ -70,5 +68,18 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
+
+    <script>
+    var cb=function(){
+      var l=document.createElement('link'); 
+      l.rel='stylesheet'; 
+      l.href='css/style.min.css'; 
+      var h=document.getElementsByTagName('head')[0]; 
+      h.parentNode.insertBefore(l, h);
+      }; 
+      var raf=requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame; if (raf) raf(cb); 
+      else window.addEventListener('load', cb); 
+      </script>
+
   </body>
 </html>
